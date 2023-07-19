@@ -1,0 +1,37 @@
+
+<body style="margin: 0"></body>
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "29cfa069-569b-43a9-b8a8-aac6d5283a59",
+        apiHost: "http://20.253.103.184:3000",
+        theme: {
+            chatWindow: {
+                welcomeMessage: "Hello! I am a conversational bot powered by OpenAI and Pinecone. You may ask any question about the content from Season 1 of <b>The 2080</b> podcast (here's a <a href="https://spoti.fi/3PYx1gL" target="_blank">link</a>) and I'll do my best to help. I remember the context from your previous questions, so reload the page if you want to start fresh. <i>(This is experimental and may provide inaccurate info or stop working at any time. Source data is a text file of all episode transcripts.)</i>",
+                backgroundColor: "#ffffff",
+                fontSize: 16,
+                poweredByTextColor: "#ffffff",
+                botMessage: {
+                    backgroundColor: "#f7f8ff",
+                    textColor: "#303235",
+                    showAvatar: true,
+                    avatarSrc: "https://deow9bq0xqvbj.cloudfront.net/image-logo/12386319/The2080_1_8.jpg",
+                },
+                userMessage: {
+                    backgroundColor: "#3B81F6",
+                    textColor: "#ffffff",
+                    showAvatar: true,
+                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                },
+                textInput: {
+                    placeholder: "Type your question",
+                    backgroundColor: "#ffffff",
+                    textColor: "#303235",
+                    sendButtonColor: "#3B81F6",
+                }
+            }
+        }
+    })
+</script>
+</body>
